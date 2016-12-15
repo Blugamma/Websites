@@ -1,0 +1,465 @@
+@font-face {
+	font-family: AvenirNextLTPro-Bold;
+	src: url('../fonts/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+	font-family: AvenirNextLTPro-Regular;
+	src: url('../fonts/AvenirNextLTPro-Regular.otf');
+}
+
+html,body{
+    padding:0;
+    margin:0;
+    background-color: f7f7f7;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background-color: #657d89;
+}
+
+#logo{
+    float:left;
+    width:110px;
+}
+
+.wrap{
+    padding:0;
+    width:75%;
+    margin: 0 auto;
+    //border: 1px solid black;
+}
+
+nav{
+    width:877px;
+    float:right;
+}
+
+#home a, #difference a, #building a, #supporters a, #case_studies a, #funding a, #evaluation a{
+    font-family: AvenirNextLTPro-Bold;
+    color:white;
+    text-decoration: none;
+    margin-left:30px;
+    line-height: 55px;
+    font-size:.9em;
+}
+
+#home a:hover, #difference a:hover, #building a:hover, #supporters a:hover, #case_studies a:hover, #funding a:hover, #evaluation a:hover{
+    text-decoration: underline;
+    
+}
+
+#home{
+    display: inline-block;
+    margin-top:12.5px;
+    width:94px;
+    height:56px;
+    background: url(../images/home_background.png) no-repeat;
+}
+
+#difference{
+    
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:159px;
+    height:56px;
+    background: url(../images/difference_background.png) no-repeat;
+}
+
+#building{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:145px;
+    height:56px;
+    background: url(../images/building_background.png) no-repeat;
+}
+
+#supporters{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:135px;
+    height:56px;
+    background: url(../images/supporters_background.png) no-repeat;
+}
+
+#case_studies{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:142px;
+    height:56px;
+    background: url(../images/case_studies_background.png) no-repeat;
+}
+
+#funding{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:115px;
+    height:56px;
+    background: url(../images/funding_background.png) no-repeat;
+}
+
+#evaluation{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:123px;
+    height:56px;
+    background: url(../images/evaluation_background.png) no-repeat;
+}
+#colorbar1{
+    float: right;
+    width:25%;
+    height:7px;
+    background-color: #72a932;
+}
+
+#colorbar2{
+    width:25%;
+    height:7px;
+    float: right;
+    background-color: #6197ab;
+}
+
+#colorbar3{
+    width:25%;
+    height:7px;
+    float: right;
+    
+    background-color: #c31c1c;
+}
+
+#colorbar4{
+    width:25%;
+    height:7px;
+    float: right;
+    background-color: #2a2c56;
+}
+
+#menuButton{
+    display:none;
+}
+
+#mobileNav{
+    display:none;
+    height:0;
+}
+
+#titleImage{
+    padding-right:1%;
+    float:left;
+    width: 49%;
+    
+}
+
+#indexTitle h1{
+    margin-top:10px;
+    padding:0;
+    text-align: center;
+    float:left;
+    font-size: 2em;
+    width:49%;
+    font-family: AvenirNextLTPro-Regular;
+    color: #2a2c56;
+}
+
+#indexPara1B p{
+    margin:0;
+    float:left;
+    width:49%;
+    font-size: 1.1em;
+    font-family: AvenirNextLTPro-Bold;
+    color: #2a2c56;
+}
+
+#indexPara1R p{
+    margin-top:10px;
+    float:left;
+    width:49%;
+    font-size: 1.1em;
+    font-family: AvenirNextLTPro-Regular;
+    color: #2a2c56;
+}
+
+#slider{
+    width:auto;
+    position:relative;
+    clear:none;
+}
+.mySlides{
+    padding-top:1%;
+    margin: 0 auto;
+    width:90%;
+    
+}
+
+.leftArrow{
+    margin-top:-16%;
+    cursor: pointer;
+    float:left;
+    color: #4f636d;
+    font-weight: bold;
+    font-size: 3vmin;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.leftArrow:hover, .rightArrow:hover{
+    color: #2a2c56;
+}
+.rightArrow {
+    cursor: pointer;
+    margin-top:-16%;
+    float:right;
+    color: #4f636d;
+    font-weight: bold;
+    font-size: 3vmin;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+}
+
+footer{
+    width:100%;
+    height:auto;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: #657d89;
+}
+.footerPR{
+    display: inline-block;
+    margin-top:0;
+    padding-bottom:5px;
+    font-family: AvenirNextLTPro-Regular;
+    color:white;
+}
+
+.footerPR p{
+    margin:0;
+}
+
+
+
+#livewell{
+    display:block;
+    padding-left:50px;
+    margin-top:-50px;
+    float:right;
+    width:163px;
+    height:66px;
+    background: url(../images/livewellLogo.png) no-repeat;
+}
+
+#pfp{
+    display:block;
+    padding-left:50px;
+    margin-top:-50px;
+    float:right;
+    width:131px;
+    height:66px;
+    background: url(../images/pfpLogo.png) no-repeat;
+}
+#pup{
+    display:block;
+    margin-top:-10px;
+    float:right;
+    width:140px;
+    height:72px;
+    background: url(../images/pupLogo.png) no-repeat;
+}
+#webContent{
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+    
+
+@media (max-width: 1535px) {
+    .wrap{
+        width:80%;
+    }
+}
+
+
+@media (max-width: 1286px){
+    .wrap{
+        width:90%;
+    }
+    nav{
+        display:none;
+    }
+
+    #menuButtonScript{
+        margin-top:15px;
+        float:right;
+        display:block;
+        width:58px;
+        height:44px;
+        background: url(../images/menuButton.png) no-repeat;
+    }
+
+    #menuButtonScript:hover{
+        width:58px;
+        height:44px;
+        background: url(../images/menuButtonHover.png) no-repeat;
+    }
+
+    #mobileNav{
+        padding:0;
+        width:100%;
+        display: none;
+        height:auto;
+    }
+    
+
+    #mobileNav #mobilehome{
+        display:block;
+        text-align: center;
+        background-color: #2a2c56;
+        width:100%;
+        padding:0;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobilehome:hover{
+        background-color: #1d1f3d;
+    }
+
+    #mobileNav #mobilediff{
+        display:block;
+        text-align: center;
+        background-color: #c31c1c;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobilediff:hover{
+        background-color: #a01616;
+    }
+
+    #mobileNav #mobilebuilding{
+        display:block;
+        text-align: center;
+        background-color: #6197ab;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobilebuilding:hover{
+        background-color: #436c7c;
+    }
+
+    #mobileNav #mobilesupporters{
+        display:block;
+        text-align: center;
+        background-color: #72a932;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobilesupporters:hover{
+        background-color: #507423;
+    }
+
+    #mobileNav #mobilecase{
+        display:block;
+        text-align: center;
+        background-color: #df8b12;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobilecase:hover{
+        background-color: #b46f0d;
+    }
+
+    #mobileNav #mobilefunding{
+        display:block;
+        text-align: center;
+        background-color: #1c6ce7;
+        width:100%;
+        padding:0;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+    #mobileNav #mobileevaluation{
+        display:block;
+        text-align: center;
+        background-color: #15a074;
+        width:100%;
+        padding:0;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+    }
+
+
+    #titleImage{
+        width:100%;
+    }
+    
+    #indexTitle h1{
+        width:100%;
+        
+    }
+
+    #indexPara1B p{
+        width:100%;
+        
+    }
+
+    #indexPara1R p{
+        width:100%;
+        
+    }
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .wrap{
+        width:95%;
+    }
+
+ }
+
+ /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .wrap{
+        width:95%;
+    }
+    
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    
+ }
