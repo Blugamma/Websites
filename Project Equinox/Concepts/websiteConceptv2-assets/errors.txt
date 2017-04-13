@@ -1,0 +1,2 @@
+[4/7/2017, 3:17:10 PM] layer "2016 PROJECTEQUINOX.CO.UK ALL RIGHTS RESRVED": Expected end of input but "A" found.
+[4/7/2017, 3:17:10 PM] layer "CREATED BY BlugammaDesign.com": Unsupported extension: com

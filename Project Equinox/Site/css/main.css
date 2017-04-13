@@ -1,0 +1,374 @@
+@font-face {
+	font-family: AvenirNextLTPro-Bold;
+	src: url('../fonts/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+	font-family: AvenirNextLTPro-Regular;
+	src: url('../fonts/AvenirNextLTPro-Regular.otf');
+}
+
+html,body{
+    padding:0;
+    margin:0;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background-color: #4f636d;
+}
+
+#logo{
+    float:left;
+    width:110px;
+}
+
+.wrap{
+    padding:0;
+    width:60%;
+    margin: 0 auto;
+    //border: 1px solid black;
+}
+
+nav{
+    width:755px;
+    float:right;
+}
+
+#home a, #difference a, #building a, #supporters a, #case_studies a{
+    font-family: AvenirNextLTPro-Bold;
+    color:white;
+    text-decoration: none;
+    margin-left:30px;
+    line-height: 55px;
+    font-size:.9em;
+}
+
+#home a:hover, #difference a:hover, #building a:hover, #supporters a:hover, #case_studies a:hover{
+    text-decoration: underline;
+    
+}
+
+#home{
+    display: inline-block;
+    margin-top:12.5px;
+    width:94px;
+    height:56px;
+    background: url(../images/home_background.png) no-repeat;
+}
+
+#difference{
+    
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:266px;
+    height:56px;
+    background: url(../images/difference_background.png) no-repeat;
+}
+
+#building{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:145px;
+    height:56px;
+    background: url(../images/building_background.png) no-repeat;
+}
+
+#supporters{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:135px;
+    height:56px;
+    background: url(../images/supporters_background.png) no-repeat;
+}
+
+#case_studies{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:12.5px;
+    width:135px;
+    height:56px;
+    background: url(../images/case_studies_background.png) no-repeat;
+}
+
+#colorbar1{
+    float: right;
+    width:25%;
+    height:7px;
+    background-color: #72a932;
+}
+
+#colorbar2{
+    width:25%;
+    height:7px;
+    float: right;
+    background-color: #6197ab;
+}
+
+#colorbar3{
+    width:25%;
+    height:7px;
+    float: right;
+    
+    background-color: #c31c1c;
+}
+
+#colorbar4{
+    width:25%;
+    height:7px;
+    float: right;
+    background-color: #2a2c56;
+}
+
+#menuButton{
+    display:none;
+}
+
+#mobileNav{
+    display:none;
+}
+
+#titleImage{
+    padding-right:1%;
+    padding-top:1%;
+    float:left;
+    width: 49%;
+}
+
+#indexTitle h1{
+    padding:0;
+    text-align: center;
+    margin-top:1%;
+    float:left;
+    font-size: 170%;
+    width:49%;
+    font-family: AvenirNextLTPro-Regular;
+    color: #2a2c56;
+}
+
+#indexPara1B p{
+    float:left;
+    width:49%;
+    font-size: 82%;
+    font-family: AvenirNextLTPro-Bold;
+    color: #2a2c56;
+}
+
+#indexPara1R p{
+    margin-top:10px;
+    float:left;
+    width:49%;
+    font-size: 82%;
+    font-family: AvenirNextLTPro-Regular;
+    color: #2a2c56;
+}
+
+#slider{
+    width:100%;
+}
+.mySlides{
+    padding-top:1%;
+    margin: 0 auto;
+    width:90%;
+    display: inline-block;
+}
+
+.leftArrow{
+    margin-top:-21vmin;
+    float:left;
+    font-size:50px;
+    color: #4f636d;
+    cursor:pointer;
+}
+
+.rightArrow{
+    float:right;
+    margin-top:-21vmin;
+    font-size:50px;
+    color: #4f636d;
+    cursor:pointer;
+}
+
+    
+
+@media (max-width: 1535px) {
+    .wrap{
+        width:85%;
+    }
+}
+
+@media (max-width: 1139px) {
+    .wrap{
+        width:90%;
+    }
+
+    .leftArrow{
+        font-size: 25px;
+    }
+
+    .rightArrow{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 979px){
+    nav{
+        display:none;
+    }
+
+    #menuButtonScript{
+        margin-top:15px;
+        float:right;
+        display:block;
+        width:58px;
+        height:44px;
+        background: url(../images/menuButton.png) no-repeat;
+    }
+
+    #menuButtonScript:hover{
+        width:58px;
+        height:44px;
+        background: url(../images/menuButtonHover.png) no-repeat;
+    }
+
+    #mobileNav{
+        padding:0;
+        width:100%;
+        display: none;
+    }
+    
+
+    #mobileNav #mobilehome{
+        display:block;
+        text-align: center;
+        background-color: #2a2c56;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+        width:100%;
+    }
+
+    #mobileNav #mobilehome:hover{
+        background-color: #1d1f3d;
+    }
+
+    #mobileNav #mobilediff{
+        display:block;
+        text-align: center;
+        background-color: #c31c1c;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+        width:100%;
+    }
+
+    #mobileNav #mobilediff:hover{
+        background-color: #a01616;
+    }
+
+    #mobileNav #mobilebuilding{
+        display:block;
+        text-align: center;
+        background-color: #6197ab;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+        width:100%;
+    }
+
+    #mobileNav #mobilebuilding:hover{
+        background-color: #436c7c;
+    }
+
+    #mobileNav #mobilesupporters{
+        display:block;
+        text-align: center;
+        background-color: #72a932;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+        width:100%;
+    }
+
+    #mobileNav #mobilesupporters:hover{
+        background-color: #507423;
+    }
+
+    #mobileNav #mobilecase{
+        display:block;
+        text-align: center;
+        background-color: #df8b12;
+        width:100%;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-family: AvenirNextLTPro-Bold;
+        text-decoration: none;
+        color:white;
+        width:100%;
+    }
+
+    #mobileNav #mobilecase:hover{
+        background-color: #b46f0d;
+    }
+
+    #titleImage{
+        width:100%;
+    }
+    
+    #indexTitle h1{
+        width:100%;
+        font-size:120%;
+    }
+
+    #indexPara1B p{
+        width:100%;
+        font-size:75%;
+    }
+
+    #indexPara1R p{
+        width:100%;
+        font-size:75%;
+    }
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .wrap{
+        width:95%;
+    }
+
+ }
+
+ /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .wrap{
+        width:95%;
+    }
+    
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    
+ }
