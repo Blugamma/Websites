@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="images/logoIcon.png_32x32.png" type="image/xicon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="scripts/iframe/iframeScript.js"></script>
     <link rel="stylesheet" href="./scripts/menuButton/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="./scripts/menuButton/css/menu.css" type="text/css" />
@@ -16,7 +18,7 @@
 </head>
 
 <body id="top">
-    <div class="overlay"></div>
+    
     <header>
         <div class="wrap"> <img id="logo" src="images/logobanner.png">
             <div id="titleFont">Blugamma Design</div>
@@ -24,20 +26,20 @@
                 <div id="menuButton"></div>
                 <div id="smallmenuButton"></div>
             </label>
-            <nav> <a href="index.html">Home</a>
-                <li class="dropdown"> <a href="portfolio.html">Portfolio</a>
-                    <div class="dropdown-content"> <a href="portfolio.html#webDesign">Web Design</a> <a href="portfolio.html#brandDesign">Brand Design</a> </div>
-                </li> <a href="services.html">Services</a> <a href="contact.html">Contact</a> </nav>
+            <nav> <a href="http://blugammadesign.com">Home</a>
+                <li class="dropdown"> <a href="portfolio">Portfolio</a>
+                    <div class="dropdown-content"> <a href="portfolio#webDesign">Web Design</a> <a href="portfolio#brandDesign">Brand Design</a> </div>
+                </li> <a href="services">Services</a> <a href="contact">Contact</a> </nav>
         </div>
         <nav class="mainMenu">
             <input type="checkbox" id="toggleMenu" />
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="mobiledropdown"> <a href="portfolio.html" id="portnavButton" class="mobiledropbtn">Portfolio</a>
-                    <div class="mobiledropdown-content"> <a href="portfolio.html#webDesign">- Web Design</a> <a href="portfolio.html#brandDesign">- Brand Design</a> </div>
+                <li><a href="http://blugammadesign.com">Home</a></li>
+                <li class="mobiledropdown"> <a href="portfolio" id="portnavButton" class="mobiledropbtn">Portfolio</a>
+                    <div class="mobiledropdown-content"> <a href="portfolio#webDesign">- Web Design</a> <a href="portfolio#brandDesign">- Brand Design</a> </div>
                 </li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,32 +47,36 @@
         <div id="scrollBackUp"></div>
     </a>
     <!--Inde iframe Overlay-->
-    <div id="indeiframeOverlay">
-        <div class="iframeTitle">Internet Design - University Course Site</div>
-        <div class="closeiframe">X</div>
-        <iframe id="indeIframe" src="http://blugammadesign.com/internetdesign"></iframe>
-    </div>
+    
     <!--harvey and martin iframe Overlay-->
     <div id="harveyiframeOverlay">
         <div class="iframeTitle">Harvey & Martin - Local Organic Hair Salon</div>
         <div class="closeiframe">X</div>
-        <iframe id="harveyIframe" src="http://blugammadesign.com/harveyandmartin"></iframe>
+        
     </div>
 
     
 
     <div class="wrap">
         <div class="webContent">
-            <div class="titleText" id="webDesign">Web Design Projects</div> <img class="PortImage" src="images/indePortfolioImage.jpg">
+            <div class="titleText" id="webDesign">Web Design Projects</div> 
+            <img id="IndePortImage" src="images/indePortfolioImage.png">
+            <div id="indeIframe">
+            <iframe src="http://blugammadesign.com/internetdesign"></iframe>
+            </div>
             <p class="PortTitle">Internet Design - University Course Site</p>
+            
             <p id="indePortNameiframe">View Site</p>
-            <p class="portFont">This is a design I created while I was doing my first year at university. The brief for the assignment was to create a fully responsive website for our course. I made an automatic image slider that is fully responsive with all devices, I used the Facebook API to show the latest posts from the Digital Art Technology Facebook Page. I recieved a 1st for this project.</p> <img class="PortImage" src="images/harveyandmartinPortImage.jpg">
-            <p class="PortTitle">Harvey & Martin - Local Organic Hair Salon</p>
-            <p id="harveyPortNameiframe">View Site</p>
-            <p class="portFont">I designed and developed this website for a friend and family hair salon business located in Cheltenham. It is still in development and is subject to change over time. It is a fully responsive design that is usable on all types of devices. You can see that I have used the Facebook API to create a Recent News Feed, this will grab all the facebook posts on the companies facebook page and will display it on their website.</p>
-            <img class="PortImage" src="images/PEPortfolioImage.jpg">
+            <p id="hideInde">Hide Site</p>
+            <p class="portFont">This is a design I created while I was doing my first year at university. The brief for the assignment was to create a fully responsive website for our course. I made an automatic image slider that is fully responsive with all devices, I used the Facebook API to show the latest posts from the Digital Art Technology Facebook Page. I recieved a 1st for this project.</p>
+            
+            <img id="PEPortImage" src="images/PEPortfolioImage.png">
+            <div id="PEIframe">
+            <iframe src="http://test.projectequinox.co.uk"></iframe>
+            </div>
             <p class="PortTitle">Project Equinox - War Veterans Charity</p>
-            <p id="PEPortNameiframe">View Site (Under Construction)</p>
+            <p id="PEPortNameiframe">View Site</p>
+            <p id="hidePE">Hide Site</p>
             <p class="portFont">Project Equinox contacted me, to take their brochure they currently had and design it into an online website using their branding and content. This is a charity, that is, fundraising £3 million towards a £11 million project to build an accommodation for war veterans in need of medical supervision.</p>
             <div class="titleText" id="brandDesign">Brand Design Projects</div> <img class="PortImage" src="images/gammatrekPortImage.jpg">
             <p class="PortTitle">Gammatrek - Technology Youtube Channel</p>
@@ -100,5 +106,36 @@
         </div>
     </footer>
 </body>
+<script>
+    $("#indePortNameiframe").click(function() {
+    $("#indeIframe").css("display", "block");
+    $("#IndePortImage").css("display", "none");
+    $("#indePortNameiframe").css("display", "none");
+    $("#hideInde").css("display", "block");
+    });
 
+    $( "#hideInde" ).click(function() {
+    $( "#indeIframe" ).css("display", "none");
+    $("#IndePortImage").css("display", "block");
+    $("#indePortNameiframe").css("display", "block");
+    $("#hideInde").css("display", "none");
+    });
+
+    $("#PEPortNameiframe").click(function() {
+    $("#PEIframe").css("display", "block");
+    $("#PEPortImage").css("display", "none");
+    $("#PEPortNameiframe").css("display", "none");
+    $("#hidePE").css("display", "block");
+    });
+
+    $( "#hidePE" ).click(function() {
+    $( "#PEIframe" ).css("display", "none");
+    $("#PEPortImage").css("display", "block");
+    $("#PEPortNameiframe").css("display", "block");
+    $("#hidePE").css("display", "none");
+    });
+
+
+
+</script>
 </html>
